@@ -97,7 +97,6 @@ document.getElementById("chatMessage").addEventListener("keyup", (e) => {
 socket.on("user_stop-typing", (username) => {
   const userTypeDiv = document.querySelectorAll(".chat__user-typing");
   userTypeDiv.forEach((div) => {
-    console.log(div);
     document.querySelector(".chat__messageContainer-messages").removeChild(div);
   });
 });
