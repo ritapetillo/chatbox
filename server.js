@@ -6,7 +6,7 @@ import socket from "socket.io";
 const app = express();
 const users = [];
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 //create server
 const server = http.createServer(app);
 const io = socket.listen(server);
